@@ -1,11 +1,16 @@
 import React from 'react';
 import BookItem from './bookItem';
+
 const BookList = ({ books }) => {
   return (
     <div>
+      <ul>
       {books.map((book) => (
-        <BookItem book={book} /> 
+        <li>
+          <BookItem book={book}/> 
+        </li>
       ))}
+      </ul>
     </div>
   );
 };
