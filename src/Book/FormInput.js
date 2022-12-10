@@ -15,7 +15,7 @@ const FormInput = () => (
         placeholder="Add author"
         name="author"
       />
-      <button>add</button>
+      <button type="button">add</button>
     </form>
   </div>
 );

@@ -2,18 +2,18 @@
 import { Route, Routes } from 'react-router-dom';
 import BookContainer from './Book/bookcontainer';
 import Categories from './Categories';
-import Navbar from './Navbar';
+import Header from './Navbar';
 
-const App = () => (
-  <>
-    <Navbar />
+function App() {
+  return (
     <div>
+      <Header />
       <Routes>
         <Route path="/" element={<BookContainer />} />
         <Route path="/categories" element={<Categories />} />
       </Routes>
     </div>
-  </>
-);
+  );
+}
 
 export default App;

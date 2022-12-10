@@ -21,9 +21,8 @@ const BookContainer = () => {
     },
   ];
   return (
-    <div>
+    <div className="container">
       <BookList books={books} />
-      ,
       <FormInput />
     </div>
   );
