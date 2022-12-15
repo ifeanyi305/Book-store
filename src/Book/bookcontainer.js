@@ -1,25 +1,10 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import BookList from './BookList';
 import FormInput from './FormInput';
 
 const BookContainer = () => {
-  const books = [
-    {
-      title: 'ifeanyi',
-      author: 'merchant of venice',
-      completed: true,
-    },
-    {
-      title: 'joseph',
-      author: 'things fall apart',
-      completed: true,
-    },
-    {
-      title: 'antony',
-      author: 'go to the ant',
-      completed: true,
-    },
-  ];
+  const books = useSelector((state) => state.books);
   return (
     <div className="container">
       <BookList books={books} />
