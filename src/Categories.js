@@ -8,7 +8,7 @@ const Categories = () => {
   return (
     <div>
       <h1>{categories}</h1>
-      <button type="button" onClick={() => dispatch(checkStatus())}>check status</button>
+      <button type="button" className="status-btn" onClick={() => dispatch(checkStatus())}>check status</button>
     </div>
   );
 };

@@ -24,3 +24,7 @@ code {
     'Courier New',
     monospace;
 }
+
+.status-btn {
+  font-size: 15px;
+}
