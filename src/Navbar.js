@@ -1,16 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { FaRegUser } from 'react-icons/fa';
 
 const Navbar = () => {
-  const x = 'bookstore';
+  const x = 'Bookstore CMS';
   return (
     <div>
       <nav className="navbar">
-        <h1>{x}</h1>
         <ul>
-          <li><Link to="/">Books</Link></li>
-          <li><Link to="/categories">Categories</Link></li>
+          <a href="#Bookstore" className="header-title">{x}</a>
+          <li><Link className="anchor" to="/">Books</Link></li>
+          <li><Link className="anchor" to="/categories">Categories</Link></li>
         </ul>
+        <div className="userDiv">
+          <FaRegUser className="user" />
+        </div>
       </nav>
     </div>
   );

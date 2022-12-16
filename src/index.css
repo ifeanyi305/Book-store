@@ -13,6 +13,9 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f3f4f8;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 code {
@@ -27,4 +30,183 @@ code {
 
 .status-btn {
   font-size: 15px;
+}
+
+.main-container {
+  background-color: #fafafa;
+  width: 80%;
+  margin: auto;
+  max-width: 1440px;
+  padding: 3% 3% 3% 3%;
+}
+
+.percentage-rate {
+  border-radius: 50%;
+  width: 4.25rem;
+  height: 4.25rem;
+  border: 5px solid #307bbe;
+  border-left-color: #e8e8e8;
+  transform: rotate(45deg);
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  background-color: #fff;
+  margin-bottom: 1.5px;
+  padding: 0 3% 0 3%;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 10px;
+  list-style: none;
+}
+
+.header-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #0290ff;
+}
+
+.title {
+  font-weight: 900;
+}
+
+.navbar ul li .anchor {
+  padding: 0 15px;
+  color: black;
+  font-weight: 200;
+}
+
+.navbar ul li .anchor:hover {
+  color: black;
+  font-weight: 300;
+}
+
+.userDiv {
+  border-radius: 50%;
+  border: 2px solid #f3f4f8;
+  padding: 10px;
+}
+
+.user {
+  color: #1d90ff;
+  cursor: pointer;
+}
+
+.navbar ul a {
+  text-decoration: none;
+}
+
+.book-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 700px) {
+  .book-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-title {
+    text-align: center;
+  }
+}
+
+.book-percent {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.line {
+  line-height: 3%;
+}
+
+.fiction {
+  color: #898989;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.remove-btn {
+  border: none;
+  cursor: pointer;
+  background-color: #fff;
+  color: #659dcc;
+  border-right: 2px solid #e8e8e8;
+}
+
+.update-btn,
+.status-btn {
+  background-color: #1d90ff;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 3px;
+  padding: 8px 24px;
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  border: none;
+}
+
+.bookInfo,
+.update {
+  padding: 20px;
+}
+
+.current-chapter {
+  font-family: "Roboto Slab", serif;
+  font-weight: 300;
+  color: #121212;
+  font-size: 0.813rem;
+  opacity: 0.5;
+}
+
+.form-title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.18px;
+  color: #888;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input {
+  width: 40%;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #e8e8e8;
+  background-color: #fff;
+  font-size: 1rem;
+  letter-spacing: -0.15px;
+  color: #121212;
+}
+
+.category-con {
+  margin-left: 7%;
 }
