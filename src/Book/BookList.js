@@ -7,12 +7,14 @@ const BookList = () => {
   const books = useSelector((state) => state.books);
   return (
     <>
-      <div>
-        {books.map((book) => (
-          <BookItem book={book} key={book.item_id} />
-        ))}
+      <div className="main-container">
+        <div>
+          {books.map((book) => (
+            <BookItem book={book} key={book.item_id} />
+          ))}
+        </div>
+        <FormInput />
       </div>
-      <FormInput />
     </>
   );
 };

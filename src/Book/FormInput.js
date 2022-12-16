@@ -25,6 +25,8 @@ const FormInput = () => {
 
   return (
     <div>
+      <hr />
+      <h2 className="form-title">Add New Book</h2>
       <form onSubmit={addBooks}>
         <input
           type="text"
@@ -44,7 +46,7 @@ const FormInput = () => {
           value={author}
           required
         />
-        <button type="submit">add Book</button>
+        <button type="submit" className="update-btn">add Book</button>
       </form>
     </div>
   );
