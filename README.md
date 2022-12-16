@@ -210,6 +210,6 @@ I would like to thank... React Community, Microverse community for the immese he
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](https://github.com/ifeanyi305/Book-store/blob/connect-to-api/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
