@@ -155,8 +155,10 @@ code {
   border-right: 2px solid #e8e8e8;
 }
 
-.update-btn {
+.update-btn,
+.status-btn {
   background-color: #1d90ff;
+  cursor: pointer;
   color: #fff;
   font-size: 18px;
   border-radius: 3px;
