@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { v4 as uuid4 } from 'uuid';
 import { addBook } from '../redux/books/Books';
 
 const FormInput = () => {
@@ -10,7 +11,13 @@ const FormInput = () => {
   const addBooks = (e) => {
     e.preventDefault();
     if (title.trim() || author.trim()) {
-      dispatch(addBook({ title, author }));
+      const payload = {
+        item_id: uuid4(),
+        title,
+        author,
+        category: 'fiction',
+      };
+      dispatch(addBook(payload));
     }
     setAuthor('');
     setTitle('');
